@@ -1,54 +1,6 @@
-*
-  padding: 0
-  margin: 0
-  box-sizing: border-box
-  user-select: none
-
-li
-  list-style: none
-  margin-bottom: 8px
-
-  &:last-of-type
-    margin-bottom: 0
-
-html
-  height: 100vh
-  width: 100vw
-  background-color: rgb(236, 236, 236)
-  // background-image: radial-gradient(200vmax 120vmin at 50% 100%, rgb(194, 208, 223), rgb(255, 255, 255))
-
-body
-  width: 100%
-  display: flex
-  align-items: center
-  justify-content: center
-
-#CV
-  width: 100%
-  max-width: 1200px
-  display: flex
-  flex-wrap: wrap
-  align-items: stretch
-  gap: 32px
-  padding: 16px
-
-  #sidebar
-    flex: 1
-
-  #qualifications
-    flex: 3
-
-// #CV
-//   width: 100%
-//   max-width: 1000px
-//   display: grid
-//   grid-template-columns: repeat(auto-fit, minmax(200px,auto))
-//   gap: 32px
-//   padding: 16px
-
-//   #sidebar
-
-//   #qualifications
+@import general
+@import cv_container
+@import education
 
 .bubble
   padding: 16px
@@ -62,7 +14,7 @@ body
     width: fit-content
     text-transform: uppercase
     margin-bottom: 16px
-    padding: 0 8px 0 4px
+    padding-right: 16px
     border-radius: 0 0 8px 0
     border: 0px solid transparent
     border-bottom: 1px solid #00a2ff
