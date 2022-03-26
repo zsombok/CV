@@ -79,8 +79,10 @@ body {
           margin-block-start: 8px;
 }
 .qualification-holder .software {
-  -webkit-text-decoration: 1px underline #00a2ff;
-          text-decoration: 1px underline #00a2ff;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: #00a2ff;
+          text-decoration-color: #00a2ff;
 }
 
 .bubble {
