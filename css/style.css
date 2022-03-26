@@ -61,30 +61,24 @@ body {
   flex: 2;
 }
 
-.qualification-header {
+.qualification-holder .qualification-header {
   display: flex;
   justify-content: space-between;
   -webkit-margin-before: 16px;
           margin-block-start: 16px;
   font-weight: bold;
 }
-
-.qualification-details {
+.qualification-holder .qualification-details {
   border-left: 1px solid #00a2ff;
   padding: 8px 0 0 4px;
 }
-.qualification-details ul {
-  display: flex;
-  flex-direction: column;
-}
-.qualification-details ul li {
+.qualification-holder li {
   border-left: 1px solid #00a2ff;
   padding-left: 4px;
   -webkit-margin-before: 8px;
           margin-block-start: 8px;
 }
-
-.software {
+.qualification-holder .software {
   -webkit-text-decoration: 1px underline #00a2ff;
           text-decoration: 1px underline #00a2ff;
 }
