@@ -31,10 +31,6 @@ h1, h2, h3, h4, h5, h6, h7 {
 
 li {
   list-style: none;
-  margin-bottom: 16px;
-}
-li:last-of-type {
-  margin-bottom: 0;
 }
 
 html {
@@ -65,13 +61,32 @@ body {
   flex: 2;
 }
 
-.education-header {
+.qualification-header {
   display: flex;
-  width: 100%;
   justify-content: space-between;
-  -webkit-margin-after: 8px;
-          margin-block-end: 8px;
+  -webkit-margin-before: 16px;
+          margin-block-start: 16px;
   font-weight: bold;
+}
+
+.qualification-details {
+  border-left: 1px solid #00a2ff;
+  padding: 8px 0 0 4px;
+}
+.qualification-details ul {
+  display: flex;
+  flex-direction: column;
+}
+.qualification-details ul li {
+  border-left: 1px solid #00a2ff;
+  padding-left: 4px;
+  -webkit-margin-before: 8px;
+          margin-block-start: 8px;
+}
+
+.software {
+  -webkit-text-decoration: 1px underline #00a2ff;
+          text-decoration: 1px underline #00a2ff;
 }
 
 .bubble {
@@ -87,8 +102,8 @@ body {
   width: fit-content;
   text-transform: uppercase;
   margin-bottom: 16px;
-  padding-right: 16px;
-  border-radius: 0 0 8px 0;
+  -webkit-padding-end: 8px;
+          padding-inline-end: 8px;
   border: 0px solid transparent;
   border-bottom: 1px solid #00a2ff;
 }
