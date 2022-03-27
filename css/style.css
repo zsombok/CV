@@ -9,8 +9,17 @@
   font-family: "Glory", sans-serif;
 }
 
+:root {
+  --size-normal: 16px;
+}
+
+@media screen and (hover: none) {
+  :root {
+    --size-normal: 2px;
+  }
+}
 ::-webkit-scrollbar {
-  width: 8px;
+  width: var(--size-normal);
 }
 
 ::-webkit-scrollbar-track {
@@ -86,11 +95,14 @@ body {
 }
 
 .bubble {
-  padding: 16px;
+  padding: var(--size-normal);
   margin-bottom: 32px;
   border-radius: 16px;
   background: linear-gradient(-4deg, white, #dcdcde);
   box-shadow: -6px -6px 16px white, 6px 6px 16px #c8ccd4;
+}
+.bubble:last-of-type {
+  margin-bottom: 0px;
 }
 .bubble .caption {
   width: -webkit-fit-content;

@@ -1,4 +1,5 @@
 @import colors
+@import sizes
 
 *
   padding: 0
@@ -7,8 +8,15 @@
   user-select: none
   font-family: 'Glory', sans-serif
 
+:root
+  --size-normal: 16px
+
+@media screen and (hover: none)
+  :root
+    --size-normal: 2px
+
 ::-webkit-scrollbar
-  width: 8px
+  width: var(--size-normal)
 
 ::-webkit-scrollbar-track
   background: transparent
