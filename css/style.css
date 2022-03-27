@@ -10,16 +10,19 @@
 }
 
 :root {
-  --size-normal: 16px;
+  --size-normal: 8px;
+  --size-half: 4px;
+  --size-double: 16px;
 }
 
 @media screen and (hover: none) {
   :root {
-    --size-normal: 2px;
+    --size-normal: 4px;
+    --size-double: 8px;
   }
 }
 ::-webkit-scrollbar {
-  width: var(--size-normal);
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -60,8 +63,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  gap: 32px;
-  padding: 16px;
+  gap: var(--size-double);
+  padding: var(--size-double);
 }
 #CV #sidebar {
   flex: 1;
@@ -95,7 +98,7 @@ body {
 }
 
 .bubble {
-  padding: var(--size-normal);
+  padding: 16px;
   margin-bottom: 32px;
   border-radius: 16px;
   background: linear-gradient(-4deg, white, #dcdcde);

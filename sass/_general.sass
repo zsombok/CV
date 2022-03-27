@@ -9,14 +9,17 @@
   font-family: 'Glory', sans-serif
 
 :root
-  --size-normal: 16px
+  --size-normal: #{$size-normal}
+  --size-half: #{$size-half}
+  --size-double: #{$size-double}
 
 @media screen and (hover: none)
   :root
-    --size-normal: 2px
+    --size-normal: #{$size-normal/2}
+    --size-double: #{$size-double/2}
 
 ::-webkit-scrollbar
-  width: var(--size-normal)
+  width: 8px
 
 ::-webkit-scrollbar-track
   background: transparent
