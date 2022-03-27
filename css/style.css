@@ -62,6 +62,9 @@ body {
   justify-content: center;
 }
 
+#personal address {
+  font-style: normal;
+}
 #personal a {
   display: block;
   -webkit-margin-before: 8px;
@@ -185,7 +188,7 @@ body {
   background-image: url("../src/img/skill/Logo_Git.png");
 }
 .skill-card .icon-json {
-  background-image: url("../src/img/skill/Logo_JSON.gif");
+  background-image: url("../src/img/skill/Logo_JSON.png");
 }
 .skill-card .icon-wp {
   background-image: url("../src/img/skill/Logo_WordPress.png");
