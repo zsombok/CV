@@ -13,7 +13,7 @@
   --size-half: #{$size-half}
   --size-double: #{$size-double}
 
-@media screen and (hover: none)
+@media screen and (hover: none) and (max-width: 600px)
   :root
     --size-normal: #{$size-normal/2}
     --size-double: #{$size-double/2}
@@ -33,6 +33,10 @@
 
 h1, h2, h3, h4, h5, h6, h7
   font-family: 'Source Code Pro', monospace
+
+a
+  text-decoration: none
+  color: inherit
 
 li
   list-style: none
