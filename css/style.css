@@ -76,8 +76,8 @@ body {
   font-size: 2em;
 }
 #personal .row {
-  -webkit-margin-before: 8px;
-          margin-block-start: 8px;
+  -webkit-margin-before: 16px;
+          margin-block-start: 16px;
   display: flex;
   gap: 8px;
 }
@@ -85,6 +85,9 @@ body {
   flex: 1;
   font-size: 1.1em;
   text-align: center;
+  padding-block: 12px;
+  color: #00a2ff;
+  text-decoration: underline;
 }
 
 #CV {
@@ -134,9 +137,6 @@ body {
   border-radius: 16px;
   background: linear-gradient(-4deg, white, #dcdcde);
   box-shadow: -6px -6px 16px white, 6px 6px 16px #c8ccd4;
-}
-.bubble:last-of-type {
-  margin-bottom: 0px;
 }
 .bubble .caption {
   width: -webkit-fit-content;
