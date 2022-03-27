@@ -62,13 +62,29 @@ body {
   justify-content: center;
 }
 
+.tag {
+  background-color: white;
+  padding: 4px 8px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
 #personal address {
   font-style: normal;
 }
-#personal a {
-  display: block;
+#personal .name {
+  font-size: 2em;
+}
+#personal .row {
   -webkit-margin-before: 8px;
           margin-block-start: 8px;
+  display: flex;
+  gap: 8px;
+}
+#personal .row > * {
+  flex: 1;
+  font-size: 1.1em;
+  text-align: center;
 }
 
 #CV {
@@ -149,12 +165,7 @@ body {
   min-width: max-content;
   max-width: 50%;
   gap: 8px;
-  justify-content: space-between;
   align-items: center;
-  background-color: white;
-  padding: 4px 8px;
-  border-radius: 8px;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .skill-card .icon {
   width: 20px;
