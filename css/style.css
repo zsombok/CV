@@ -177,6 +177,9 @@ body {
 .skill-card .icon-java {
   background-image: url("../src/img/skill/Logo_Java.png");
 }
+.skill-card .icon-spring {
+  background-image: url("../src/img/skill/Logo_Spring.png");
+}
 .skill-card .icon-html {
   background-image: url("../src/img/skill/Logo_HTML5.png");
 }
