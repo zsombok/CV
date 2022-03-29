@@ -163,16 +163,16 @@ body {
   font-weight: bold;
 }
 .qualification-holder .qualification-details {
-  border-left: 2px solid #00a2ff;
+  border-left: 1px solid #00a2ff;
   padding: 8px 0 0 4px;
 }
 .qualification-holder li {
-  border-left: 2px solid #00a2ff;
+  border-left: 1px solid #00a2ff;
   padding-left: 4px;
   -webkit-margin-before: 8px;
           margin-block-start: 8px;
 }
-.qualification-holder .software {
+.qualification-holder .software-highlight {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   -webkit-text-decoration-color: #00a2ff;
