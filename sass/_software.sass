@@ -1,0 +1,32 @@
+#software-knowledge
+  .software
+    width: fit-content
+
+  .tag
+    margin-block-start: 8px
+
+  .level
+    display: flex
+    gap: 4px
+    margin-block: 4px
+    align-items: end
+
+    .level-indicator
+      flex: 1
+      height: 4px
+      border-radius: 2px
+      // box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2)
+
+    @for $i from 1 through 6
+      .level-indicator:nth-child(#{$i})
+        background-color: darken($color-accent, (7-$i) * 4%)
+
+  .level[data-level="5"]
+    .level-indicator:nth-child(6)
+      opacity: 0
+  .level[data-level="4"]
+    .level-indicator:nth-child(5), .level-indicator:nth-child(6)
+      opacity: 0
+  .level[data-level="3"]
+    .level-indicator:nth-child(4), .level-indicator:nth-child(5), .level-indicator:nth-child(6)
+      opacity: 0
