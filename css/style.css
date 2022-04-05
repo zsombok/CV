@@ -67,6 +67,58 @@ body {
   padding: 4px 8px;
   border-radius: 8px;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -webkit-margin-before: 8px;
+          margin-block-start: 8px;
+}
+
+.level {
+  display: flex;
+  gap: 4px;
+  margin-block: 4px;
+  align-items: end;
+}
+.level .level-indicator {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+}
+.level .level-indicator:nth-child(1) {
+  background-color: #005485;
+}
+.level .level-indicator:nth-child(2) {
+  background-color: #006199;
+}
+.level .level-indicator:nth-child(3) {
+  background-color: #006ead;
+}
+.level .level-indicator:nth-child(4) {
+  background-color: #007bc2;
+}
+.level .level-indicator:nth-child(5) {
+  background-color: #0088d6;
+}
+.level .level-indicator:nth-child(6) {
+  background-color: #0095eb;
+}
+
+.level[data-level="5"] .level-indicator:nth-child(6) {
+  opacity: 0;
+}
+
+.level[data-level="4"] .level-indicator:nth-child(5), .level[data-level="4"] .level-indicator:nth-child(6) {
+  opacity: 0;
+}
+
+.level[data-level="3"] .level-indicator:nth-child(4), .level[data-level="3"] .level-indicator:nth-child(5), .level[data-level="3"] .level-indicator:nth-child(6) {
+  opacity: 0;
+}
+
+.level[data-level="2"] .level-indicator:nth-child(3), .level[data-level="2"] .level-indicator:nth-child(4), .level[data-level="2"] .level-indicator:nth-child(5), .level[data-level="2"] .level-indicator:nth-child(6) {
+  opacity: 0;
+}
+
+.level[data-level="1"] .level-indicator:nth-child(2), .level[data-level="1"] .level-indicator:nth-child(3), .level[data-level="1"] .level-indicator:nth-child(4), .level[data-level="1"] .level-indicator:nth-child(5), .level[data-level="1"] .level-indicator:nth-child(6) {
+  opacity: 0;
 }
 
 #personal .picture-container {
@@ -103,53 +155,8 @@ body {
   color: #00a2ff;
   text-decoration: underline;
 }
-
-#software-knowledge .software {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-#software-knowledge .tag {
-  -webkit-margin-before: 8px;
-          margin-block-start: 8px;
-}
-#software-knowledge .level {
-  display: flex;
-  gap: 4px;
-  margin-block: 4px;
-  align-items: end;
-}
-#software-knowledge .level .level-indicator {
-  flex: 1;
-  height: 4px;
-  border-radius: 2px;
-}
-#software-knowledge .level .level-indicator:nth-child(1) {
-  background-color: #005485;
-}
-#software-knowledge .level .level-indicator:nth-child(2) {
-  background-color: #006199;
-}
-#software-knowledge .level .level-indicator:nth-child(3) {
-  background-color: #006ead;
-}
-#software-knowledge .level .level-indicator:nth-child(4) {
-  background-color: #007bc2;
-}
-#software-knowledge .level .level-indicator:nth-child(5) {
-  background-color: #0088d6;
-}
-#software-knowledge .level .level-indicator:nth-child(6) {
-  background-color: #0095eb;
-}
-#software-knowledge .level[data-level="5"] .level-indicator:nth-child(6) {
-  opacity: 0;
-}
-#software-knowledge .level[data-level="4"] .level-indicator:nth-child(5), #software-knowledge .level[data-level="4"] .level-indicator:nth-child(6) {
-  opacity: 0;
-}
-#software-knowledge .level[data-level="3"] .level-indicator:nth-child(4), #software-knowledge .level[data-level="3"] .level-indicator:nth-child(5), #software-knowledge .level[data-level="3"] .level-indicator:nth-child(6) {
-  opacity: 0;
+#personal .row .tag {
+  margin: 0;
 }
 
 #CV {
@@ -218,6 +225,9 @@ body {
   flex-wrap: wrap;
   align-items: stretch;
   gap: 8px;
+}
+.technical-skills .tag {
+  margin: 0;
 }
 
 .skill-card {
