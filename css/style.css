@@ -286,6 +286,9 @@ body {
 .skill-card .icon-docker {
   background-image: url("../src/img/skill/Logo_Docker.png");
 }
+.skill-card .icon-flyway {
+  background-image: url("../src/img/skill/Logo_Flyway.png");
+}
 .skill-card .skill {
   flex: 1;
   text-align: center;
