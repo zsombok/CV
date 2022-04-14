@@ -289,6 +289,9 @@ body {
 .skill-card .icon-flyway {
   background-image: url("../src/img/skill/Logo_Flyway.png");
 }
+.skill-card .icon-jira {
+  background-image: url("../src/img/skill/Logo_Jira.png");
+}
 .skill-card .skill {
   flex: 1;
   text-align: center;
