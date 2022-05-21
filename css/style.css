@@ -259,13 +259,21 @@ body {
 .qualification-holder .qualification-header {
   display: flex;
   justify-content: space-between;
-  -webkit-margin-before: 16px;
-          margin-block-start: 16px;
+  -webkit-margin-before: 24px;
+          margin-block-start: 24px;
+  -webkit-padding-start: 4px;
+          padding-inline-start: 4px;
   font-weight: bold;
+  -webkit-border-start: 1px solid #00a2ff;
+          border-inline-start: 1px solid #00a2ff;
 }
 .qualification-holder .qualification-details {
-  border-left: 1px solid #00a2ff;
-  padding: 8px 0 0 4px;
+  padding: 8px 0 8px 4px;
+  border-bottom-left-radius: 4px;
+  -webkit-border-start: 1px solid #00a2ff;
+          border-inline-start: 1px solid #00a2ff;
+  -webkit-border-after: 1px solid #00a2ff;
+          border-block-end: 1px solid #00a2ff;
 }
 .qualification-holder li {
   border-left: 1px solid #00a2ff;
