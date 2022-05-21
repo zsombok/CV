@@ -198,8 +198,11 @@ body {
 .skill-card .icon-sass {
   background-image: url("../src/img/skill/Logo_SASS.png");
 }
-.skill-card .icon-sql {
+.skill-card .icon-mysql {
   background-image: url("../src/img/skill/Logo_MySQL.png");
+}
+.skill-card .icon-postgesql {
+  background-image: url("../src/img/skill/Logo_PostgreSQL.png");
 }
 .skill-card .icon-python {
   background-image: url("../src/img/skill/Logo_python.png");
@@ -227,6 +230,9 @@ body {
 }
 .skill-card .icon-flyway {
   background-image: url("../src/img/skill/Logo_Flyway.png");
+}
+.skill-card .icon-liquibase {
+  background-image: url("../src/img/skill/Logo_Liquibase.png");
 }
 .skill-card .icon-jira {
   background-image: url("../src/img/skill/Logo_Jira.png");
