@@ -159,67 +159,6 @@ body {
   margin: 0;
 }
 
-#CV {
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  gap: var(--size-double);
-  padding-inline: var(--size-double);
-  padding-block: 16px;
-}
-#CV #sidebar {
-  flex: 1;
-}
-#CV #qualifications {
-  flex: 2;
-}
-
-.qualification-holder .qualification-header {
-  display: flex;
-  justify-content: space-between;
-  -webkit-margin-before: 16px;
-          margin-block-start: 16px;
-  font-weight: bold;
-}
-.qualification-holder .qualification-details {
-  border-left: 1px solid #00a2ff;
-  padding: 8px 0 0 4px;
-}
-.qualification-holder li {
-  border-left: 1px solid #00a2ff;
-  padding-left: 4px;
-  -webkit-margin-before: 16px;
-          margin-block-start: 16px;
-  text-align: justify;
-}
-.qualification-holder .software-highlight {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  -webkit-text-decoration-color: #00a2ff;
-          text-decoration-color: #00a2ff;
-}
-
-.bubble {
-  padding: 16px;
-  margin-bottom: 32px;
-  border-radius: 16px;
-  background: linear-gradient(-4deg, rgb(255, 255, 255), rgb(220, 220, 222));
-  box-shadow: -6px -6px 16px rgb(255, 255, 255), 6px 6px 16px rgb(200, 204, 212);
-}
-.bubble .caption {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-  -webkit-padding-end: 8px;
-          padding-inline-end: 8px;
-  border: 0px solid transparent;
-  border-bottom: 1px solid #00a2ff;
-}
-
 .technical-skills {
   display: flex;
   flex-wrap: wrap;
@@ -292,9 +231,73 @@ body {
 .skill-card .icon-jira {
   background-image: url("../src/img/skill/Logo_Jira.png");
 }
+.skill-card .icon-swagger {
+  background-image: url("../src/img/skill/Logo_Swagger.png");
+}
 .skill-card .skill {
   flex: 1;
   text-align: center;
+}
+
+#CV {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: var(--size-double);
+  padding-inline: var(--size-double);
+  padding-block: 16px;
+}
+#CV #sidebar {
+  flex: 1;
+}
+#CV #qualifications {
+  flex: 2;
+}
+
+.qualification-holder .qualification-header {
+  display: flex;
+  justify-content: space-between;
+  -webkit-margin-before: 16px;
+          margin-block-start: 16px;
+  font-weight: bold;
+}
+.qualification-holder .qualification-details {
+  border-left: 1px solid #00a2ff;
+  padding: 8px 0 0 4px;
+}
+.qualification-holder li {
+  border-left: 1px solid #00a2ff;
+  padding-left: 4px;
+  -webkit-margin-before: 16px;
+          margin-block-start: 16px;
+  text-align: justify;
+}
+.qualification-holder .software-highlight {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: #00a2ff;
+          text-decoration-color: #00a2ff;
+}
+
+.bubble {
+  padding: 16px;
+  margin-bottom: 32px;
+  border-radius: 16px;
+  background: linear-gradient(-4deg, rgb(255, 255, 255), rgb(220, 220, 222));
+  box-shadow: -6px -6px 16px rgb(255, 255, 255), 6px 6px 16px rgb(200, 204, 212);
+}
+.bubble .caption {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  -webkit-padding-end: 8px;
+          padding-inline-end: 8px;
+  border: 0px solid transparent;
+  border-bottom: 1px solid #00a2ff;
 }
 
 @media screen and (orientation: portrait) {
