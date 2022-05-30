@@ -198,6 +198,9 @@ body {
 .skill-card .icon-sass {
   background-image: url("../src/img/skill/Logo_SASS.png");
 }
+.skill-card .icon-junit5 {
+  background-image: url("../src/img/skill/Logo_JUnit5.png");
+}
 .skill-card .icon-mysql {
   background-image: url("../src/img/skill/Logo_MySQL.png");
 }
