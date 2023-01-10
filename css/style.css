@@ -189,6 +189,12 @@ body {
 .skill-card .icon-java {
   background-image: url("../src/img/skill/Logo_Java.png");
 }
+.skill-card .icon-angular {
+  background-image: url("../src/img/skill/Logo_Angular.png");
+}
+.skill-card .icon-typescript {
+  background-image: url("../src/img/skill/Logo_Typescript.png");
+}
 .skill-card .icon-spring {
   background-image: url("../src/img/skill/Logo_Spring.png");
 }
