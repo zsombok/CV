@@ -1,5 +1,5 @@
-const rootEl = document.querySelector('body');
+const rootEl = document.querySelector("body");
 
-window.addEventListener('contextmenu',(e) => {
-e.preventDefault();
-})
+window.addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+});

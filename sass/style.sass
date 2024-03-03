@@ -11,6 +11,7 @@
   // background: linear-gradient(-8deg, rgb(220, 220, 222),rgb(255, 252, 250))
   background: linear-gradient(-4deg, rgb(255, 255, 255) 40%, rgb(236, 236, 240))
   box-shadow: -6px -6px 16px rgb(255, 255, 255), 6px 6px 16px rgb(220, 220, 228)
+  break-inside: avoid
 
   .caption
     width: fit-content
@@ -24,3 +25,41 @@
 @media screen and (orientation: portrait)
   #CV
     flex-direction: column
+
+@media print
+  *
+    box-shadow: none !important
+
+  html
+    height: auto
+    margin: 0
+    padding: 0
+    background-color: transparent
+
+  #CV
+    padding: 0
+
+  .bubble
+    border: 1px solid #00a2ff44
+    background: none
+
+  .skill-card
+    padding: 4px
+    border: 1px solid #00a2ff44
+
+  #online-address
+    display: none
+
+  #print-address
+    display: block
+
+    .row
+      flex-direction: column
+
+      > *
+        color: black
+        text-decoration: none
+
+@page
+  size: A4
+  margin: 8mm
